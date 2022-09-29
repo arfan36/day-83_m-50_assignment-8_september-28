@@ -36,8 +36,11 @@ const ExerciseDetails = () => {
             </div>
             {/* owner info end -------------------------------*/}
             <h5 className='m-2 py-3'>Add A Break</h5>
-            <div className='bg-white p-2 m-2 rounded-3'>
-                <button className='btn btn-outline-info rounded-pill'>10s</button>
+            <div className='bg-white p-2 m-2 rounded-3 d-flex justify-content-evenly'>
+                <button className='btn btn-outline-info rounded-pill ms-2'>10s</button>
+                <button className='btn btn-outline-info rounded-pill ms-2'>20s</button>
+                <button className='btn btn-outline-info rounded-pill ms-2'>30s</button>
+                <button className='btn btn-outline-info rounded-pill ms-2'>40s</button>
             </div>
         </div>
     );
