@@ -1,22 +1,22 @@
 import './ExerciseItems.css';
 import React from 'react';
 
-const ExerciseItems = () => {
+const ExerciseItems = ({ product }) => {
+    const { name, age, time, img } = product;
     return (
-        <div className='container'>
-            <div className='card-items'>
-                <div className="card mb-3" style={{ maxWidth: "400px" }}>
-                    <div className="row g-0">
-                        <div className="col-md-4">
-                            <img src="..." className="img-fluid rounded-start" alt="..." />
-                        </div>
-                        <div className="col-md-8">
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
+        <div className="card mb-4 mx-auto" style={{ maxWidth: "350px" }}>
+            <div className="row g-0">
+                <div className="col-md-5">
+                    <div>
+                        <img src={img} className="img-fluid rounded-start" alt="..." />
+                    </div>
+                </div>
+                <div className="col-md-7">
+                    <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                        <h6>For Age: {age}</h6>
+                        <h6>Time required: {time}s</h6>
+                        <button className='btn btn-outline-info fw-semibold'>Add to list</button>
                     </div>
                 </div>
             </div>

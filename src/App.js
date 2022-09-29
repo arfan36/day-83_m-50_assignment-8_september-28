@@ -15,11 +15,11 @@ function App() {
 
   return (
     <div className='full-container'>
-      <div className='exercise-items'>
+      <div className='container'>
         <div>
           <Header></Header>
         </div>
-        <div>
+        <div className='exercise-items row'>
           {
             products.map(product => <ExerciseItems
               key={product.id}

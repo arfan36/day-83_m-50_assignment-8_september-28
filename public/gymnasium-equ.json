@@ -3,42 +3,42 @@
     "id": "6335a6890d223114db774e6d",
     "name": "Black Spin Bike",
     "age": "25-30",
-    "time": "60s",
-    "img": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    "time": "60",
+    "img": "https://images.unsplash.com/photo-1591741535018-d042766c62eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
   },
   {
     "id": "6335a689e653cfefff99db9d",
     "name": "Escalator",
     "age": "25-30",
-    "time": "60s",
-    "img": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+    "time": "60",
+    "img": "https://images.unsplash.com/flagged/photo-1597786797107-1799e7e79f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
   },
   {
     "id": "6335a6898c43670dc7aefdbc",
     "name": "Treadmills",
     "age": "25-30",
-    "time": "60s",
-    "img": "https://images.unsplash.com/photo-1578874691223-64558a3ca096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+    "time": "60",
+    "img": "https://images.unsplash.com/photo-1633394782240-f81aba3f850d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
   },
   {
     "id": "6335a689620ae4bd7d888be9",
     "name": "Stationary Bike",
     "age": "25-30",
-    "time": "60s",
-    "img": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+    "time": "60",
+    "img": "https://images.unsplash.com/photo-1658314756052-30e8d440abf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
   },
   {
     "id": "6335a689326cd667ef8f4c86",
     "name": "Lifting Barbels",
     "age": "25-30",
-    "time": "60s",
-    "img": "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1294&q=80"
+    "time": "60",
+    "img": "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
   },
   {
     "id": "6335a68912a3e98b72fa2aa1",
     "name": "TRX Resistance Band",
     "age": "25-30",
-    "time": "60s",
+    "time": "60",
     "img": "https://images.unsplash.com/photo-1530021356476-0a6375ffe73b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
   }
 ]

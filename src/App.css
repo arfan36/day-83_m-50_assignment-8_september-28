@@ -1,4 +1,15 @@
-.full-container{
+.full-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+
+.exercise-details {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 700px) {
+  .full-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
