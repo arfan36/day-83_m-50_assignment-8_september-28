@@ -2,6 +2,7 @@ import './ExerciseDetails.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import { deleteSavedData } from '../utilities/fakedb';
 const ExerciseDetails = ({ cart }) => {
     console.log(cart);
 
@@ -60,6 +61,11 @@ const ExerciseDetails = ({ cart }) => {
                 <h6>Break time</h6>
                 <h6 style={{ color: "gray" }}><span>0</span> seconds</h6>
             </div>
+
+            {/* Activity Completed Button -------------------- */}
+            <button onClick={deleteSavedData} className='btn btn-outline-info rounded-3 w-100'>
+                Remove Information
+            </button>
 
             {/* Activity Completed Button -------------------- */}
             <button className='btn btn-secondary btn-outline-info rounded-3 w-100 my-5'>
