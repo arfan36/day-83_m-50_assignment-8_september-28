@@ -2,8 +2,7 @@ import './ExerciseDetails.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
-const ExerciseDetails = ({selectedProductTime }) => {
-    console.log(selectedProductTime);
+const ExerciseDetails = () => {
 
     let exerciseTime = 0;
 

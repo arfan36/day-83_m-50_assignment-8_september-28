@@ -11,7 +11,7 @@ const addToDb = (id, time) => {
     // Add total time (quantity)
     const totalTime = savedObject[id];      //@ quantity
     if (totalTime) {
-        const newTotalTime = totalTime + time;
+        const newTotalTime = parseInt(totalTime) + parseInt(time);
         savedObject[id] = newTotalTime;
     }
     else {

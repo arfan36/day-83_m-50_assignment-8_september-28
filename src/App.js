@@ -3,6 +3,7 @@ import './App.css';
 import ExerciseDetails from './components/ExerciseDetails/ExerciseDetails';
 import ExerciseItems from './components/ExerciseItems/ExerciseItems';
 import Header from './components/Header/Header';
+import { addToDb } from './components/utilities/fakedb';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -14,10 +15,8 @@ function App() {
   }, []);
 
   const handleAddToList = (selectedProduct) => {
-    selectedProductTime(selectedProduct.time);
-  };
-  const selectedProductTime = (selectedTime) => {
-    return parseInt(selectedTime);
+    // console.log(selectedProduct);
+    addToDb(selectedProduct.id, selectedProduct.time);
   };
 
   return (
@@ -39,7 +38,7 @@ function App() {
 
       <div className='exercise-details'>
         <ExerciseDetails
-          selectedTime={selectedProductTime}
+
         ></ExerciseDetails>
       </div>
     </div>
