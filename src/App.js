@@ -19,7 +19,7 @@ function App() {
         <div>
           <Header></Header>
         </div>
-        <div className='exercise-items row'>
+        <div className='exercise-items row mx-1'>
           {
             products.map(product => <ExerciseItems
               key={product.id}
