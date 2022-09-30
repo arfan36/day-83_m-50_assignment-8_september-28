@@ -32,18 +32,6 @@ function App() {
 
 
   const handleAddToList = (selectedProduct) => {
-    // console.log(selectedProduct);
-    // let newCart = [];
-    // const exists = cart.find(product => product.id === selectedProduct.id);
-    // if (!exists) {
-    //   newCart = [...cart, selectedProduct];
-    // }
-    // else {
-    //   const rest = cart.filter(product => product.id !== selectedProduct.id);
-    //   exists.time = exists.time + selectedProduct.time;
-    //   newCart = [...rest, exists];
-    // }
-    // setCart(newCart);
     addToDb(selectedProduct.id, selectedProduct.time);
   };
 

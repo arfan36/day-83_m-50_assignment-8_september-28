@@ -4,12 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { deleteSavedData } from '../utilities/fakedb';
 const ExerciseDetails = ({ cart }) => {
-    console.log(cart);
 
     let exerciseTime = 0;
     for (const product of cart) {
         exerciseTime = parseInt(exerciseTime) + parseInt(product.time);
     }
+
+    const breakTime = (id) => {
+        document.getElementById('break-time').innerText = id;
+    };
 
     return (
         <div className='container mt-3 position-sticky top-0'>
@@ -45,10 +48,10 @@ const ExerciseDetails = ({ cart }) => {
             {/* Add A Break ---------------------------------- */}
             <h5 className='m-2 py-3'>Add A Break</h5>
             <div className='bg-white p-2 m-2 rounded-3 d-flex justify-content-evenly'>
-                <button className='btn btn-outline-info rounded-pill ms-2'>10s</button>
-                <button className='btn btn-outline-info rounded-pill ms-2'>20s</button>
-                <button className='btn btn-outline-info rounded-pill ms-2'>30s</button>
-                <button className='btn btn-outline-info rounded-pill ms-2'>40s</button>
+                <button onClick={() => breakTime(10)} className='btn btn-outline-info rounded-pill ms-2'>10s</button>
+                <button onClick={() => breakTime(20)} className='btn btn-outline-info rounded-pill ms-2'>20s</button>
+                <button onClick={() => breakTime(30)} className='btn btn-outline-info rounded-pill ms-2'>30s</button>
+                <button onClick={() => breakTime(40)} className='btn btn-outline-info rounded-pill ms-2'>40s</button>
             </div>
 
             {/* Exercise Details ---------------------------- */}
@@ -59,12 +62,12 @@ const ExerciseDetails = ({ cart }) => {
             </div>
             <div className='d-flex justify-content-around bg-white p-2 m-2 rounded-3'>
                 <h6>Break time</h6>
-                <h6 style={{ color: "gray" }}><span>0</span> seconds</h6>
+                <h6 style={{ color: "gray" }}><span id='break-time'>0</span> seconds</h6>
             </div>
 
             {/* Activity Completed Button -------------------- */}
             <button onClick={deleteSavedData} className='btn btn-outline-info rounded-3 w-100'>
-                Remove Information
+                Remove Exercise Time
             </button>
 
             {/* Activity Completed Button -------------------- */}
