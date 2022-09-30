@@ -8,15 +8,16 @@ const addToDb = (id, time) => {
         savedObject = JSON.parse(savedData);
     }
 
-    // Add total time (quantity)
-    const totalTime = savedObject[id];      //@ quantity
-    if (totalTime) {
-        const newTotalTime = parseInt(totalTime) + parseInt(time);
-        savedObject[id] = newTotalTime;
-    }
-    else {
-        savedObject[id] = time;
-    }
+    // // Add total time (quantity)
+    // const totalTime = savedObject[id];      //@ quantity
+    // if (totalTime) {
+    //     const newTotalTime = parseInt(totalTime) + parseInt(time);
+    //     savedObject[id] = newTotalTime;
+    // }
+    // else {
+    //     savedObject[id] = time;
+    // }
+    savedObject[id] = time;
     localStorage.setItem('saved-data', JSON.stringify(savedObject));
 };
 

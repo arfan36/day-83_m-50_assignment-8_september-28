@@ -2,9 +2,13 @@ import './ExerciseDetails.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
-const ExerciseDetails = () => {
+const ExerciseDetails = ({ cart }) => {
+    console.log(cart);
 
     let exerciseTime = 0;
+    for (const product of cart) {
+        exerciseTime = parseInt(exerciseTime) + parseInt(product.time);
+    }
 
     return (
         <div className='container mt-3 position-sticky top-0'>
