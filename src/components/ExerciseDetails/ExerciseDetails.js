@@ -2,7 +2,11 @@ import './ExerciseDetails.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
-const ExerciseDetails = () => {
+const ExerciseDetails = ({selectedProductTime }) => {
+    console.log(selectedProductTime);
+
+    let exerciseTime = 0;
+
     return (
         <div className='container mt-3 position-sticky top-0'>
             {/* owner info ------------------------------------*/}
@@ -47,7 +51,7 @@ const ExerciseDetails = () => {
             <h5 className='m-2 py-3'>Exercise Details</h5>
             <div className='d-flex justify-content-around bg-white p-2 m-2 rounded-3'>
                 <h6>Exercise time</h6>
-                <h6 style={{ color: "gray" }}><span>0</span> seconds</h6>
+                <h6 style={{ color: "gray" }}><span>{exerciseTime}</span> seconds</h6>
             </div>
             <div className='d-flex justify-content-around bg-white p-2 m-2 rounded-3'>
                 <h6>Break time</h6>

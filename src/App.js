@@ -13,6 +13,13 @@ function App() {
       .then(data => setProducts(data));
   }, []);
 
+  const handleAddToList = (selectedProduct) => {
+    selectedProductTime(selectedProduct.time);
+  };
+  const selectedProductTime = (selectedTime) => {
+    return parseInt(selectedTime);
+  };
+
   return (
     <div className='full-container'>
       <div className='container'>
@@ -24,13 +31,16 @@ function App() {
             products.map(product => <ExerciseItems
               key={product.id}
               product={product}
+              handleAddToList={handleAddToList}
             ></ExerciseItems>)
           }
         </div>
       </div>
 
       <div className='exercise-details'>
-        <ExerciseDetails></ExerciseDetails>
+        <ExerciseDetails
+          selectedTime={selectedProductTime}
+        ></ExerciseDetails>
       </div>
     </div>
   );
